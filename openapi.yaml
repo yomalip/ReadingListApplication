@@ -16,9 +16,9 @@ paths:
             schema:
               type: object
               example:
-                id: 1
-                title: Gulliver's Travels
-                author: Jonathan Swift
+                id: 2
+                title: To Kill a Mockingbird
+                author: Harper Lee
                 status: READ
       responses:
         "200":
@@ -35,10 +35,10 @@ paths:
             schema:
               type: object
               example:
-                id: 1
+                id: 0
                 name: Gulliver's Travels
-                author: Jonathan Swift
-                status: READING
+                title: Jonathan Swift
+                status: READ
       responses:
         "200":
           description: Successful response
