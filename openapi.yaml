@@ -54,9 +54,29 @@ paths:
           content:
             application/json: {}
     delete:
-      tags:
-        - default
-      summary: delete
+      summary: Delete book by ID
+      parameters:
+        - name: id
+          in: query
+          description: ID of the book to delete
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json: {}
+  /books/id:
+    get:
+      summary: get by id
+      parameters:
+        - name: id
+          in: query
+          description: ID of the book to find
+          required: true
+          schema:
+            type: integer
       responses:
         "200":
           description: Successful response

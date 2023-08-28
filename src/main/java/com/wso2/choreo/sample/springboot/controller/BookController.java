@@ -24,7 +24,7 @@ public class BookController {
         return service.getBooks().values();
     }
 
-    @GetMapping
+    @GetMapping("/id")
     public Book findBookById(@RequestParam("id") int bookId) {
         return service.getBookById(bookId);
     }
