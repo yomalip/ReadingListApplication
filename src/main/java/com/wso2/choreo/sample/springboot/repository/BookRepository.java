@@ -11,8 +11,8 @@ public class BookRepository {
     private Map<Integer, Book> map = new ConcurrentHashMap<>();
 
     public BookRepository() {
-        map.put(1, new Book(0, "Gulliver's Travels", "Jonathan Swift", "READING"));
-        map.put(2, new Book(1, "Oliver Twist", "Charles Dickens", "READING"));
+        map.put(0, new Book(0, "Gulliver's Travels", "Jonathan Swift", "READING"));
+        map.put(1, new Book(1, "Oliver Twist", "Charles Dickens", "READING"));
     }
 
     public Map<Integer, Book> getAllBooks() {
