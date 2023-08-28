@@ -36,8 +36,8 @@ paths:
               type: object
               example:
                 id: 0
-                name: Gulliver's Travels
-                title: Jonathan Swift
+                title: Gulliver's Travels
+                author: Jonathan Swift
                 status: READ
       responses:
         "200":
